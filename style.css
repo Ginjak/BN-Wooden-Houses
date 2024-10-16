@@ -1,7 +1,56 @@
-body {
-  background: red;
+:root {
+  --dark-green: #646d4e;
+  --light-green: #7aba1e;
+  --hover-green: #8eca38;
+  --white: #fff;
+  --black: #000;
+  --input-bg: #f4f4f4;
+  --grey-txt: #a7a7a7;
 }
 
-img {
-  height: 45px;
+* {
+  font-family: "Cairo", sans-serif;
+}
+
+/* Utilities */
+.py-10 {
+  padding: 10px 0;
+}
+
+.vertical-divider {
+  width: 2px;
+  height: 13px;
+  background: var(--white);
+}
+/* Header */
+
+/* Top bar */
+#top-bar {
+  background: var(--dark-green);
+}
+
+#top-bar a,
+#top-bar a:visited {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.2s linear;
+  font-size: 13px;
+}
+
+#top-bar a:hover {
+  color: var(--hover-green);
+  transition: color 0.2s linear;
+}
+
+#top-bar .phone-ico {
+  width: 12px;
+  height: 12px;
+}
+
+#top-bar .envelope-ico {
+  width: 14px;
+}
+
+#top-bar .lang.active {
+  color: var(--hover-green);
 }
