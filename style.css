@@ -50,7 +50,27 @@
 #top-bar .envelope-ico {
   width: 14px;
 }
+#top-bar .projektai-kalba svg {
+  transition: stroke 0.2s linear;
+  cursor: pointer;
+}
+#top-bar .projektai-kalba svg:hover .facebook-ico {
+  stroke: var(--hover-green) !important;
+  transition: stroke 0.2s linear;
+}
 
 #top-bar .lang.active {
   color: var(--hover-green);
+}
+
+/* Media queries */
+
+@media (max-width: 500px) {
+  .top-bar-kontaktai {
+    flex-direction: column;
+    gap: 8px !important;
+  }
+  .top-bar-wraper {
+    flex-direction: row !important;
+  }
 }
