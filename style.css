@@ -257,16 +257,6 @@
   }
 }
 @media (max-width: 576px) {
-  .overlay,
-  #hero,
-  #hero img {
-    height: 100dvh;
-  }
-
-  #hero .btn-main {
-    padding: 12px 64px;
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -285,5 +275,15 @@
   }
   .lh-38 {
     line-height: 18px;
+  }
+  .overlay,
+  #hero,
+  #hero img {
+    height: calc(100dvh - 67px);
+  }
+
+  #hero .btn-main {
+    padding: 12px 64px;
+    font-size: 16px;
   }
 }
