@@ -241,6 +241,7 @@
 
   .overlay,
   #hero,
+  #hero .hero-content,
   #hero img {
     height: 639px;
   }
@@ -277,11 +278,9 @@
     line-height: 18px;
   }
   .overlay,
-  #hero {
-    height: calc(100dvh - 67px);
-  }
+  #hero,
   #hero img {
-    height: 100%;
+    height: calc(100dvh - 67px);
   }
 
   #hero .btn-main {
