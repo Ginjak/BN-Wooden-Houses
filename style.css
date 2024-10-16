@@ -257,8 +257,6 @@
     margin-top: 10px;
   }
 }
-@media (max-width: 576px) {
-}
 
 @media (max-width: 500px) {
   .top-bar-kontaktai {
@@ -280,7 +278,7 @@
   .overlay,
   #hero,
   #hero img {
-    height: calc(100dvh - 67px);
+    height: 539px;
   }
 
   #hero .btn-main {
