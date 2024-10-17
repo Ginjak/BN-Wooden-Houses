@@ -223,9 +223,10 @@ a {
 
 /* Categories section */
 
-.cards-wraper {
-  gap: 48px;
+.category-card {
+  max-width: 396px;
 }
+
 #categories {
   padding-bottom: 32px;
 }
@@ -248,6 +249,25 @@ a {
   transition: filter 0.3s linear;
 }
 
+/* Patirtis section */
+#patirtis {
+  background-color: var(--dark-green);
+  background-image: url("./img/pattern_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#patirtis .container-xxl {
+  max-width: 950px;
+}
+#patirtis p {
+  color: var(--white);
+}
+
+#patirtis p span {
+  color: var(--light-green);
+}
 /* Media queries */
 
 @media (max-width: 1200px) {
@@ -261,8 +281,11 @@ a {
   .lh-38 {
     line-height: 30px;
   }
-  .cards-wraper {
-    gap: 24px;
+  #patirtis .lh-38 {
+    line-height: 38px;
+  }
+  #patirtis .fs-32 {
+    font-size: 32px;
   }
 }
 
@@ -298,7 +321,9 @@ a {
     padding: 16px 94px;
     font-size: 22px;
   }
-
+  .category-card {
+    max-width: 100%;
+  }
   .cards-wraper {
     gap: 0px;
     flex-wrap: wrap !important;
@@ -329,6 +354,7 @@ a {
   .lh-38 {
     line-height: 18px;
   }
+
   .overlay,
   #hero,
   #hero img {
