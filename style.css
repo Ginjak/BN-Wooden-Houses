@@ -77,6 +77,13 @@ a {
   color: var(--white);
 }
 
+.card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
 /* Header */
 
 /* Top bar */
@@ -238,15 +245,11 @@ a {
   height: 539px;
 }
 #categories .card-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
   filter: grayscale(100%);
-  transition: filter 0.3s linear;
 }
 #categories .card-image:hover {
   filter: grayscale(0%);
-  transition: filter 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 /* Patirtis section */
@@ -267,6 +270,29 @@ a {
 
 #patirtis p span {
   color: var(--light-green);
+}
+
+/* Nameliai section */
+#nameliai {
+  padding: 48px 0 65px 0;
+}
+
+.nameliai-card {
+  max-width: 385px;
+}
+
+.nameliai-card a:hover .card-image {
+  opacity: 75%;
+}
+
+.plan-ico {
+  width: 20px;
+  height: 20px;
+}
+.horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--light-green);
 }
 /* Media queries */
 
@@ -327,6 +353,14 @@ a {
   .cards-wraper {
     gap: 0px;
     flex-wrap: wrap !important;
+  }
+
+  .nameliai-cards-wraper {
+    gap: 0px !important;
+    flex-wrap: wrap !important;
+  }
+  .nameliai-card {
+    max-width: 100%;
   }
 }
 
