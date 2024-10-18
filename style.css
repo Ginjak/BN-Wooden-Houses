@@ -6,6 +6,7 @@
   --black: #000;
   --input-bg: #f4f4f4;
   --grey-txt: #a7a7a7;
+  --grey-txt-hover: #7c7c7c;
   --transparent: rgba(0, 0, 0, 0);
 }
 
@@ -17,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /* Utilities */
 .container-xxl {
   max-width: 1200px;
@@ -43,6 +49,12 @@ a {
 
 .lh-38 {
   line-height: 38px;
+}
+.lh-25 {
+  line-height: 25px;
+}
+.lh-23 {
+  line-height: 23px;
 }
 
 .fs-64 {
@@ -158,7 +170,7 @@ a {
   color: var(--hover-green);
 }
 
-#navigation .nav-link:last-child {
+#navigation .nav-item:last-child .nav-link {
   padding-right: 0;
 }
 
@@ -272,16 +284,17 @@ a {
   color: var(--light-green);
 }
 
-/* Nameliai section */
-#nameliai {
+/* Nameliai/naujausi projektai section */
+#nameliai,
+#naujausi-projektai {
   padding: 48px 0 65px 0;
 }
 
-.nameliai-card {
+.product-card {
   max-width: 385px;
 }
 
-.nameliai-card a:hover .card-image {
+.product-card a:hover .card-image {
   opacity: 75%;
 }
 
@@ -293,6 +306,180 @@ a {
   width: 100%;
   height: 1px;
   background: var(--light-green);
+}
+
+/* Apie mus section */
+
+#apie-mus {
+  min-height: 246px;
+  background-image: url("./img/green_plant_1.webp");
+  background-size: cover;
+}
+
+#apie-mus h2,
+#apie-mus p {
+  max-width: 942px;
+}
+
+/* Uzklausos forma section */
+#uzklausa {
+  padding: 24px 0 65px 0;
+}
+
+#uzklausa .container-xxl {
+  max-width: 974px;
+}
+
+#uzklausos-forma .form-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+#uzklausos-forma .forma-left,
+#uzklausos-forma .forma-right {
+  max-width: 429px;
+  width: 100%;
+}
+
+#uzklausos-forma .forma-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#uzklausos-forma .forma-left .var-tel,
+#uzklausos-forma .forma-right {
+  gap: 45px;
+}
+#uzklausos-forma input,
+#uzklausos-forma textarea {
+  padding: 12px 24px;
+  border-radius: 0;
+  border: none;
+  background: var(--input-bg);
+  color: var(--grey-txt);
+}
+
+#uzklausos-forma textarea {
+  width: 100%;
+}
+#uzklausos-forma input::placeholder,
+#uzklausos-forma textarea::placeholder {
+  color: var(--grey-txt);
+}
+
+#uzklausos-forma .form-control:focus,
+#uzklausos-forma textarea:focus {
+  box-shadow: 0 0 0 0.25rem rgba(4, 5, 5, 0.25);
+}
+
+#uzklausos-forma .btn-main {
+  border: none;
+  padding: 10px 34px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.sutikimas input[type="checkbox"] {
+  display: none;
+}
+
+.sutikimas {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  color: var(--grey-txt);
+}
+.sutikimas a,
+.sutikimas a:visited {
+  text-decoration: underline;
+  color: var(--grey-txt);
+  text-underline-offset: 2px;
+  transition: color 0.2s linear;
+}
+.sutikimas a:hover {
+  color: var(--grey-txt-hover);
+  transition: color 0.2s linear;
+}
+
+/* Checkbox sutikimas */
+.sutikimas .checkmark {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  height: 16px;
+  width: 16px;
+  background-color: var(--input-bg);
+}
+
+.sutikimas .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 3px;
+}
+
+.sutikimas input:checked + .checkmark:after {
+  display: block;
+}
+
+.sutikimas .checkmark:after {
+  right: 0px;
+  bottom: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  border-color: var(--hover-green);
+}
+
+/* Footer  */
+
+footer {
+  min-height: 300px;
+  background-color: var(--dark-green);
+  background-image: url("./img/pattern_2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-top {
+  padding: 60px 0 40px 0;
+}
+
+footer .img-wraper,
+footer .card-title {
+  height: 40px;
+}
+footer .card-img {
+  max-width: 96px;
+}
+
+footer ul {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul a {
+  color: var(--white);
+  transition: color 0.2s linear;
+}
+
+footer ul a:visited {
+  color: var(--white);
+}
+
+footer ul a:hover {
+  color: var(--grey-txt);
+  transition: color 0.2s linear;
+}
+
+footer .horizontal-divider {
+  background: var(--white);
+  height: 2px;
 }
 /* Media queries */
 
@@ -326,6 +513,7 @@ a {
   .fs-24 {
     font-size: 16px;
   }
+
   .fs-40 {
     font-size: 32px;
   }
@@ -355,18 +543,48 @@ a {
     flex-wrap: wrap !important;
   }
 
-  .nameliai-cards-wraper {
+  #categories .img-wraper {
+    height: 439px;
+  }
+
+  .product-cards-wraper {
     gap: 0px !important;
     flex-wrap: wrap !important;
   }
-  .nameliai-card {
+  .product-card {
     max-width: 100%;
+  }
+  footer .fs-24 {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
   #navigation {
     margin-top: 10px;
+  }
+  #uzklausos-forma .form-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #uzklausos-forma .forma-left,
+  #uzklausos-forma .forma-right {
+    max-width: 768px;
+    width: 100%;
+  }
+  #uzklausos-forma .forma-left {
+    gap: 0px;
+  }
+  #uzklausos-forma .forma-left .var-tel,
+  #uzklausos-forma .forma-right {
+    gap: 20px;
+  }
+  #uzklausos-forma textarea {
+    min-height: 150px;
+  }
+  footer .fs-24 {
+    font-size: 18px;
   }
 }
 
@@ -398,5 +616,12 @@ a {
   #hero .btn-main {
     padding: 12px 64px;
     font-size: 16px;
+  }
+
+  #uzklausos-forma button {
+    width: 100%;
+  }
+  footer .fs-24 {
+    font-size: 18px;
   }
 }
