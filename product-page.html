@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>BN Wooden Houses</title>
+  </head>
+  <body>
+    <!-- Header pradzia -->
+    <header class="position-relative product-page">
+      <div id="top-bar" class="py-10">
+        <div class="container-xxl">
+          <div
+            class="top-bar-wraper d-flex flex-column flex-sm-row justify-content-between position-relative"
+          >
+            <div class="top-bar-kontaktai d-flex gap-5">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="phone-ico"
+                  src="./icons/phone_icon.svg"
+                  alt="phone-icon"
+                />
+                <a href="tel:+37067225689">Telefonas: +370 672 25689</a>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  class="envelope-ico"
+                  src="./icons/envelope_icon.svg"
+                  alt="envelope-icon"
+                />
+                <a href="mailto:eurogrupe.lt@gmail.com"
+                  >El. paštas: eurogrupe.lt@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="projektai-kalba d-flex gap-4 align-items-center">
+              <div class="language-wraper d-flex gap-1 align-items-center">
+                <a href="#" class="lang active">LT</a>
+                <div class="vertical-divider"></div>
+                <a href="#" class="lang">EN</a>
+              </div>
+              <a href="#" target="_blank">
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="facebook-ico"
+                    d="M3.3136 15V8.97534H1V6.39934H3.3136C3.3136 3.66311 3.3136 0.282893 9 1.13378V3.36445C6.5384 3.11167 6.292 3.84667 6.292 6.39934H9L8.4584 8.97534H6.292V15"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="navigation"
+        class="bg-transparent position-absolute product-page"
+      >
+        <nav class="navbar navbar-expand-lg navbar-light py-0 container-xxl">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand" href="/"
+              ><img
+                src="./logo/BALTAS LOGO WOODEN HOUSES.png"
+                alt="BN Wooden
+            Houses logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="ham-menu-line position-relative"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Pagrindinis</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Produkcija</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galerija</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Apie mus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontaktai</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Es projektai</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header pabaiga -->
+
+    <!-- Main pradzia -->
+    <main>
+      <section id="product-section">
+        <!-- Product section pradzia -->
+        <div class="product">
+          <div class="container-xxl">
+            <div class="product-image-details-wraper pt-5">
+              <div class="gallery-details-wraper d-flex gap-5">
+                <div class="gallery">
+                  <div class="product-gallery">
+                    <div class="main-image mb-4">
+                      <img
+                        id="mainImage"
+                        src="./img/medinis_namas_1.webp"
+                        alt="Product Image"
+                        class="fade show img-fluid"
+                      />
+                    </div>
+                    <div
+                      class="thumbnails d-flex jusitfy-content-start flex-wrap gap-3"
+                    >
+                      <div class="thumb-img-wraper position-relative">
+                        <img
+                          class="thumbnail"
+                          src="./img/medinis_namas_1.webp"
+                          alt="Thumbnail 1"
+                          onclick="updateMainImage('./img/medinis_namas_1.webp')"
+                        />
+                      </div>
+                      <div class="thumb-img-wraper position-relative">
+                        <img
+                          class="thumbnail"
+                          src="./img/medinis_namas_2.webp"
+                          alt="Thumbnail 2"
+                          onclick="updateMainImage('./img/medinis_namas_2.webp')"
+                        />
+                      </div>
+                      <div class="thumb-img-wraper position-relative">
+                        <img
+                          class="thumbnail"
+                          src="./img/nameliai_3.webp"
+                          alt="Thumbnail 3"
+                          onclick="updateMainImage('./img/nameliai_3.webp')"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="details flex-grow-1">
+                  <h2 class="text-uppercase fs-40 fw-bold mb-4">
+                    Namo pavadinimas
+                  </h2>
+               
+                  <div class="info-wraper d-flex justify-content-start gap-4 mb-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <img
+                        class="plan-ico"
+                        src="./icons/plan_icon.svg"
+                        alt=""
+                      /><span class="text-uppercase">3 zonos</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <img
+                        class="plan-ico"
+                        src="./icons/house_icon.svg"
+                        alt=""
+                      /><span class="text-uppercase">48 m<sup>2</sup></span>
+                    </div>
+                    <p class="mb-0">21 000&euro;</p>
+                  </div>
+                  <div class="kaina mb-5">
+                    <p
+                      class="mb-0 fs-40 fw-bold d-flex align-items-center gap-3"
+                    >
+                      30 054&euro;
+                      <span class="text-uppercase fw-normal fs-6">su pvm</span>
+                    </p>
+                  </div>
+                  <div class="form-wraper">
+                    <h5 class="text-uppercase fs-24 fw-bold mb-4">
+                      Pasirinkimai
+                    </h5>
+                    <form action="" class="d-flex flex-column">
+                      <p class="trigger-dropdown fs-6 mb-3" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Default radio 1
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Default checked radio 1
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    
+                      <p class="trigger-dropdown" data-target="dropdown2">Dropdown 2</p>
+                      <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown 2 link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown2">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              Default radio 2
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                              Default checked radio 2
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="informacija">
+                <p class="product-subtitle fw-bold">Informacija</p>
+                <div class="divider mb-3"></div>
+                <p>
+                  Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br />
+
+                  1. Sudedamosios dalys: audinys, aliuminio vamzdis (18 mm),
+                  aliumininė kasetė, šoniniai dangteliai, audinys, apatinis
+                  svarelis, aliumininė kreipiančioji ir valdymo mechanizmas.<br />
+
+                  2. Roletų maksimalus plotis - 1600 mm, o maksimalus aukštis
+                  iki 2500 mm. Šie parametrai yra ribojami priklausomai nuo
+                  pasirinkto audinio. Esant dideliam aukščiui ne su visais
+                  audiniais galimas pilnas suvyniojimas į kasetę.<br />
+
+                  3. Tvirtinimo galimybės: varžtelių pagalba kasetė prisukama
+                  prie lango rėmo stiklajuosčių. Kreipiančiosios specialia
+                  dvipusio lipimo juosta yra klijuojamos ant šoninių lango rėmo
+                  stiklajuosčių.<br />
+
+                  4. Garantija 24 mėnesiai.
+                </p>
+              </div>
+              <div class="aprasymas">
+                <p class="product-subtitle fw-bold">Aprašymas</p>
+                <div class="divider mb-3"></div>
+                <p>
+                  Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br />
+
+                  Gali būti pritaikyti įvairių tipų langams (tinkami tiek
+                  plastikiniams, tiek mediniams). Audinys susisuka ant vamzdžio,
+                  kuris yra uždengtas aliuminine kasete. Specialios aliumininės
+                  juostos (kreipiančiosios) išlaiko audinį prigludusį prie lango
+                  stiklo, kai jis yra atidaromas ar atverčiamas vėdinimui. Visos
+                  detalės yra pagamintos iš itin kokybiškų ir patvarių medžiagų.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product section pabaiga -->
+      </section>
+    </main>
+    <!-- Main pabaiga -->
+
+    <!-- Footer pradzia -->
+    <footer>
+      <div class="container-xxl">
+        <div class="footer-top d-flex gap-4 gap-sm-0 flex-column flex-sm-row">
+          <div class="col d-flex justify-content-start">
+            <div class="card-wraper d-flex flex-column gap-2 gap-sm-4">
+              <div class="img-wraper">
+                <img
+                  class="card-img"
+                  src="./logo/BALTAS LOGO WOODEN HOUSES.png"
+                  alt="logo"
+                />
+              </div>
+              <ul class="text-white">
+                <li>UAB "Eurogrupė</li>
+                <li>Įm.k. 163691443</li>
+                <li>PVM k. LT636914413</li>
+                <li>Bendrovių g. 10A, Palanga 00147</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-start justify-content-sm-center"
+          >
+            <div class="card-wraper d-flex flex-column gap-2 gap-sm-4">
+              <h5 class="card-title mb-0 text-white fs-24 fw-bold">
+                Produkcija
+              </h5>
+              <ul class="text-white">
+                <li><a href="#">Rąstiniai namai</a></li>
+                <li><a href="#">Karkasiniai nama</a></li>
+                <li><a href="#">Vasarnamiai ir sodo nameliai</a></li>
+                <li><a href="#">Kiti gaminiai</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-start justify-content-sm-end">
+            <div class="card-wraper d-flex flex-column gap-2 gap-sm-4">
+              <h5 class="card-title mb-0 text-white fs-24 fw-bold">
+                Darbo valandos
+              </h5>
+              <ul class="text-white">
+                <li>I V : 08.00 - 17.00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-divider"></div>
+      <div class="container-xxl">
+        <p class="mb-0 py-3 text-white fs-14">
+          Copyright @ 2017-2024 UAB "Eurogrupė . Visos teisės saugomos.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer pabaiga -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <div class="mobile-menu-bg"></div>
+  
+    <script src="./script.js"></script>
+  </body>
+</html>
