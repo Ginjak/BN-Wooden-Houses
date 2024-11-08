@@ -131,14 +131,14 @@
 
     <!-- Main pradzia -->
     <main>
-      <section id="product-section">
+      <section id="product-section" class="py-3 py-md-5">
         <!-- Product section pradzia -->
         <div class="product">
           <div class="container-xxl">
-            <div class="product-image-details-wraper pt-5">
-              <div class="gallery-details-wraper d-flex gap-5">
-                <div class="gallery">
-                  <div class="product-gallery">
+            <div class="product-image-details-wraper">
+              <div class="gallery-details-wraper d-flex flex-column flex-md-row gap-3 gap-lg-5">
+                <div class="gallery w-100 d-flex flex-column justify-content-md-between">
+                  <div class="product-gallery mb-3 mb-md-5">
                     <div class="main-image mb-4">
                       <img
                         id="mainImage"
@@ -176,14 +176,28 @@
                       </div>
                     </div>
                   </div>
+                  <div class="specifications">
+                    <h5 class="fs-40 fw-bold">Techninės specifikacijos</h5>
+                
+                  <ul>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Užstatomas plotas</span><span></span>82.00 m2</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Naudingas (gyvenamasis) plotas</span><span></span>42.00 m2</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Terasos/balkono plotas</span><span></span>24.00 m2</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Projekto zonų sk.</span><span></span>3</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Miegamieji, sk.</span><span></span>1</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">WC zona</span><span></span>1</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Sienos storis</span><span></span>124 mm</li>
+                    <li class="d-flex justify-content-between"><span class="fs-6">Stogo tipas</span><span></span>Dvišlaitis</li>
+                  </ul>
+                </div>
                 </div>
 
-                <div class="details flex-grow-1">
-                  <h2 class="text-uppercase fs-40 fw-bold mb-4">
+                <div class="details w-100">
+                  <h2 class="text-uppercase fs-40 fw-bold mb-3 mb-md-4">
                     Namo pavadinimas
                   </h2>
                
-                  <div class="info-wraper d-flex justify-content-start gap-4 mb-4">
+                  <div class="info-wraper d-flex justify-content-start gap-4 mb-3 mb-md-4">
                     <div class="d-flex align-items-center gap-2">
                       <img
                         class="plan-ico"
@@ -200,7 +214,7 @@
                     </div>
                     <p class="mb-0">21 000&euro;</p>
                   </div>
-                  <div class="kaina mb-5">
+                  <div class="kaina mb-4 mb-md-5">
                     <p
                       class="mb-0 fs-40 fw-bold d-flex align-items-center gap-3"
                     >
@@ -209,11 +223,13 @@
                     </p>
                   </div>
                   <div class="form-wraper">
-                    <h5 class="text-uppercase fs-24 fw-bold mb-4">
+                    <h5 class="text-uppercase fs-24 fw-bold mb-3 mb-md-4">
                       Pasirinkimai
                     </h5>
-                    <form action="" class="d-flex flex-column">
-                      <p class="trigger-dropdown fs-6 mb-3" data-target="dropdown1">Sienų storis</p>
+                    <form action="" class="d-flex flex-column gap-3">
+                      <!-- Butina pakeisti data-target kiekvienam naujam -->
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
                       <div class="dropdown">
                         <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
                           Irašykite arba pasirinkite
@@ -222,85 +238,309 @@
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
-                              Default radio 1
+                              Pasirinkimas
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
-                              Default checked radio 1
+                              Pasirinkimas
                             </label>
                           </div> 
                         </div>
                       </div>    
-                    
-                      <p class="trigger-dropdown" data-target="dropdown2">Dropdown 2</p>
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
                       <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown 2 link
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown2">
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                              Default radio 2
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4" checked>
-                            <label class="form-check-label" for="flexRadioDefault4">
-                              Default checked radio 2
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
                             </label>
                           </div> 
                         </div>
                       </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                       <div class="input-wraper d-flex flex-column gap-3">
+                      <p class="trigger-dropdown fs-6 mb-0" data-target="dropdown1">Sienų storis</p>
+                      <div class="dropdown">
+                        <a class="btn-option dropdown-toggle" href="#" role="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Irašykite arba pasirinkite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown1">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pasirinkimas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Pasirinkimas
+                            </label>
+                          </div> 
+                        </div>
+                      </div>    
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                     <p class="mb-0 w-50">*Pateikta kaina preliminari. Galutinė kaina apskaičiuojama, kai projektas suderinamas su vadybininku.</p>
+                     <p class="mb-0 w-50">*Pagaminimas ir pristatymas per 6-8 savaites nuo užsakymo pateikimo.</p>
+                    </div>
+                    <button type="sumbit" class="btn-green text-center fs-32 py-2 border-0">Pateikti užklausą</button>
+
+
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-              <div class="informacija">
-                <p class="product-subtitle fw-bold">Informacija</p>
-                <div class="divider mb-3"></div>
-                <p>
-                  Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br />
+            </section>
+              <!-- Product section pabaiga -->
 
-                  1. Sudedamosios dalys: audinys, aliuminio vamzdis (18 mm),
-                  aliumininė kasetė, šoniniai dangteliai, audinys, apatinis
-                  svarelis, aliumininė kreipiančioji ir valdymo mechanizmas.<br />
+              <!-- Arasymas section pradzia -->
+            <section id="aprasymas">
+              <div class="container-xxl">
+              <h2 class="fs-40 fw-bold mb-5">Aprašymas</h2>
+              <p class="mb-0 fs-24">Tai yra iš anksto pagamintas, modulinės struktūros būstas, kurį sudaro atskiri moduliai arba sekcijos, surenkami statybos vietoje. Tokie namai statomi gamyklose, o į statybos vietą atkeliauja jau paruošti montavimui, todėl visas statybos procesas tampa greitas ir efektyvus. Kadangi dauguma darbų atliekama uždarose patalpose, aplinkos veiksniai, pavyzdžiui, oro sąlygos, mažiau įtakoja statybos kokybę ir trukmę.Tai yra iš anksto pagamintas, modulinės struktūros būstas, kurį sudaro atskiri moduliai arba sekcijos, surenkami statybos vietoje. Tokie namai statomi gamyklose, o į statybos vietą atkeliauja jau paruošti montavimui, todėl visas statybos procesas tampa greitas ir efektyvus. Kadangi dauguma darbų atliekama uždarose patalpose, aplinkos veiksniai, pavyzdžiui, oro sąlygos, mažiau įtakoja statybos kokybę ir trukmę.</p>
+            </div>
+            </section>
+            <!-- Arasymas section pabaiga -->
 
-                  2. Roletų maksimalus plotis - 1600 mm, o maksimalus aukštis
-                  iki 2500 mm. Šie parametrai yra ribojami priklausomai nuo
-                  pasirinkto audinio. Esant dideliam aukščiui ne su visais
-                  audiniais galimas pilnas suvyniojimas į kasetę.<br />
 
-                  3. Tvirtinimo galimybės: varžtelių pagalba kasetė prisukama
-                  prie lango rėmo stiklajuosčių. Kreipiančiosios specialia
-                  dvipusio lipimo juosta yra klijuojamos ant šoninių lango rėmo
-                  stiklajuosčių.<br />
-
-                  4. Garantija 24 mėnesiai.
-                </p>
+             <!-- Nameliai section pradzia -->
+      <section id="nameliai">
+        <div class="container-xxl">
+          <h2 class="text-center fw-bold fs-40 mb-0">
+            Panašus  projektai
+          </h2>
+          <div
+            class="product-cards-wraper d-flex justify-content-lg-between justify-content-center gap-auto"
+          >
+            <div
+              class="product-card col-sm-6 px-0 px-sm-2 col-12 col-sm-6 col-lg-4 px-0 px-sm-2 pt-5"
+            >
+              <div class="img-wraper">
+                <a href="#">
+                  <img
+                    class="card-image"
+                    src="./img/nameliai_1.webp"
+                    alt="namelis"
+                  />
+                </a>
               </div>
-              <div class="aprasymas">
-                <p class="product-subtitle fw-bold">Aprašymas</p>
-                <div class="divider mb-3"></div>
-                <p>
-                  Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br />
-
-                  Gali būti pritaikyti įvairių tipų langams (tinkami tiek
-                  plastikiniams, tiek mediniams). Audinys susisuka ant vamzdžio,
-                  kuris yra uždengtas aliuminine kasete. Specialios aliumininės
-                  juostos (kreipiančiosios) išlaiko audinį prigludusį prie lango
-                  stiklo, kai jis yra atidaromas ar atverčiamas vėdinimui. Visos
-                  detalės yra pagamintos iš itin kokybiškų ir patvarių medžiagų.
-                </p>
+              <div class="horizontal-divider my-3"></div>
+              <div class="info-wraper d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/plan_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">3 zonos</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/house_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">48 m<sup>2</sup></span>
+                </div>
+                <p class="mb-0">21 000&euro;</p>
+              </div>
+            </div>
+            <div
+              class="product-card col-sm-6 px-0 px-sm-2 col-12 col-sm-6 col-lg-4 px-0 px-sm-2 pt-5"
+            >
+              <div class="img-wraper">
+                <a href="#">
+                  <img
+                    class="card-image"
+                    src="./img/nameliai_2.webp"
+                    alt="namelis"
+                  />
+                </a>
+              </div>
+              <div class="horizontal-divider my-3"></div>
+              <div class="info-wraper d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/plan_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">3 zonos</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/house_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">48 m<sup>2</sup></span>
+                </div>
+                <p class="mb-0">21 000&euro;</p>
+              </div>
+            </div>
+            <div
+              class="product-card col-12 col-sm-6 col-lg-4 px-0 px-sm-2 pt-5"
+            >
+              <div class="img-wraper">
+                <a href="#">
+                  <img
+                    class="card-image"
+                    src="./img/nameliai_3.webp"
+                    alt="namelis"
+                  />
+                </a>
+              </div>
+              <div class="horizontal-divider my-3"></div>
+              <div class="info-wraper d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/plan_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">3 zonos</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    class="plan-ico"
+                    src="./icons/house_icon.svg"
+                    alt=""
+                  /><span class="text-uppercase">48 m<sup>2</sup></span>
+                </div>
+                <p class="mb-0">21 000&euro;</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Product section pabaiga -->
       </section>
+      <!-- Nameliai section pabaiga -->
+
+            </div>
+          </div>
+        </div>
+      
+
     </main>
     <!-- Main pabaiga -->
 
